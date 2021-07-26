@@ -1,0 +1,9 @@
+fieldset{
+    width:500px;
+    height:150px;
+    background-color:rgb(143, 182, 86);
+    color: white;
+    border: 1px solid rgb(49, 49, 94) ;
+    position: relative;
+    margin-left: 400px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>ATM</title>
+<link rel="stylesheet" href="index.css">
+
+
+
+</head>
+<body>
+<fieldset>
+    <form method ="post">
+        Entrer votre code PIN:<input type="text" name="number" id="number" />
+        <input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+        <p id="demo"> </p>
+        
+        <div id="options12" style="display:none;">
+        
+           <input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>Balance
+           <input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>Withdraw
+           <input type='radio' name='radio' onclick='myfunction(this.value)' value='3'/>Fastcash
+        
+        </div> 
+        
+        <p id="demo1"></p>
+        
+        <div id="display" style="display:none;">
+        
+            <label>Please Enter Your Withdraw Amount</label>
+            <input type="text" name="amount1" id="amount1" value=""/>
+            <input type="submit" name="submit1" value="submit" onclick="getamount()"/>
+        
+        </div>
+        
+        <div id="display1" style="display:none;">
+        
+            <label>Please Select Your Fastcash Option</label>
+            <select id="myselect1">
+            <option value="10000">10000</option>
+            <option value ="20000">20000</option>
+            <option value ="50000">50000</option>
+        
+        </select>
+        
+        <input type="submit" name="submit2" value="submit" onclick="getamount1()">
+            
+        
+        
+        </div>
+        
+        </form>
+
+
+</fieldset>
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
+</html>
