@@ -9,16 +9,28 @@
 </head>
 <body>
 <fieldset>
+    <div class="ecran">
+        <h1 style="text-align: center ; color: bisque; font-family: 'Courier New', Courier, monospace;">GUICHET AUTOMATIQUE</h1>
+        <div class="trait"></div>
+        <br>
+        <div class="trait"></div>
+        <br>
+        <div class="trait"></div>
+        <br>
+
+
     <form method ="post">
-        Entrer votre code PIN:<input type="text" name="number" id="number" />
-        <input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+        <strong>Entrer votre code PIN:</strong><input class="aaa" type="password" name="number" id="password" />
+        <input class="button" ; type="button" name="submit" id="submit" onclick="getaction()" value="Entrer"/>
         <p id="demo"> </p>
         
-        <div id="options12" style="display:none;">
+        <div id="transaction" style="display:none;">
         
-           <input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>Balance
-           <input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>Withdraw
-           <input type='radio' name='radio' onclick='myfunction(this.value)' value='3'/>Fastcash
+           <input type='checkbox' name='radio' onclick='myfunction(this.value)' value='1'/>Solde
+           <br>
+           <input type='checkbox' name='radio' onclick='myfunction(this.value)' value='2'/>retrait
+           <br>
+           <input type='checkbox' name='radio' onclick='myfunction(this.value)' value='3'/>Historique des transaction
         
         </div> 
         
@@ -26,7 +38,7 @@
         
         <div id="display" style="display:none;">
         
-            <label>Please Enter Your Withdraw Amount</label>
+            <label>Svp entrer le retrait que vous voulez effectuer </label>
             <input type="text" name="amount1" id="amount1" value=""/>
             <input type="submit" name="submit1" value="submit" onclick="getamount()"/>
         
@@ -34,21 +46,28 @@
         
         <div id="display1" style="display:none;">
         
-            <label>Please Select Your Fastcash Option</label>
-            <select id="myselect1">
-            <option value="10000">10000</option>
-            <option value ="20000">20000</option>
-            <option value ="50000">50000</option>
-        
-        </select>
+            <label>votre historique</label>
+            <select name=”pays” size=1>
+                <option>500000
+                <option>100000
+                <option>200000
+                <option>5000000
+                <option>100000
+                </select>
+            <p>
         
         <input type="submit" name="submit2" value="submit" onclick="getamount1()">
             
         
-        
         </div>
         
-        </form>
+    </form>
+    <p style="margin-top: 200px; color:black; text-align: center; font-weight: bold; font-size: 13px;"><small>(c)merci pour la confiance</small></p>
+    
+        
+    </div>
+   
+    
 
 
 </fieldset>
